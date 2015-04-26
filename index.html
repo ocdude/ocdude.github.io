@@ -1,5 +1,60 @@
 <!doctype html>
-<html>
-	<head></head>
-	<body></body
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<!--webfont-->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
+
+	<!--stylesheets-->
+	<link href="css/main.css" rel="stylesheet" type="text/css"/>
+	<link href="css/prism.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+	<h1>Hello World!</h1>
+	<h2>Nisi id</h2>
+	<p>Nisi id sit qui aliquip excepteur dolor. Deserunt sunt nostrud excepteur in do ut ex incididunt consequat dolor enim sunt nulla. Lorem sunt eu culpa labore duis exercitation. Consequat tempor deserunt aliqua consequat anim ad nostrud occaecat commodo deserunt do Lorem consectetur. Et velit sunt ipsum in eu quis amet Lorem. Ea veniam esse incididunt minim irure cillum laborum incididunt laboris.</p>
+	<p>Duis culpa sit id et labore velit eiusmod nisi aliqua minim. Elit nostrud sit consequat adipisicing et. Nostrud aliqua anim eu officia duis incididunt aliquip Lorem. Dolor nostrud fugiat sint pariatur mollit ipsum consequat nostrud occaecat tempor aute ullamco. Consectetur nostrud velit ea ea laboris velit aute ad deserunt aliqua quis excepteur aliqua. Commodo adipisicing fugiat deserunt quis anim esse pariatur do.</p>
+		<h3>Quis consequat</h3>
+	<p>Quis consequat magna ullamco excepteur sit cillum minim laborum ad dolor amet labore incididunt ipsum. Elit magna ipsum consectetur cupidatat anim officia quis sint est. Sit aute enim velit qui veniam nisi ea sint in minim. Reprehenderit mollit non ullamco labore exercitation proident. Adipisicing aute sint aute sint anim enim irure commodo non est velit ut amet ex. Cupidatat pariatur voluptate est cupidatat occaecat elit. Incididunt Lorem ut officia est pariatur voluptate exercitation.</p>
+<pre class="line-numbers">
+<code class="language-python">
+	#!/usr/bin/env python3
+	import mbz
+	import argparse
+	import os
+
+	if __name__=="__main__":
+		args = parser.parse_args()
+
+		if args.b:
+			# do stuff for a batch of files, probably some sort of loop
+				if os.path.isdir(args.input):
+					print("batch process")
+				else:
+					sys.exit("provided input is not a directory")
+		else:
+			backup = mbz.MBZ(args.input)
+
+			if args.o is not None:
+				if os.path.isdir(args.o):
+					backup.extract_all(args.o)
+				else:
+					sys.exit("please specify a valid output directory")
+			else:
+				backup.extract_all()
+</code>
+</pre>
+<script src="js/prism.js" type="text/javascript"></script>
+	</body>
 </html>
