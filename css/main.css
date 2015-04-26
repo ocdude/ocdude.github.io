@@ -6,6 +6,9 @@ body,.jumbotron {
   background: #343d46;
   color:#cad0d4;
 }
+a {
+  color: #66d9ef;
+}
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
